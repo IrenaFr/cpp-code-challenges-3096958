@@ -15,7 +15,7 @@
 bool is_palindrome(std::string str){
 
     // Write your code here
-
+    std::transform(str.begin(), str.end(), str.begin(), ::tolower);
     return false;
 }
 
