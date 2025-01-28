@@ -16,7 +16,10 @@ bool is_palindrome(std::string str){
 
     // Write your code here
     std::transform(str.begin(), str.end(), str.begin(), ::tolower);
-    return false;
+    std::string str2 = str;
+    //convert the string to lowercase
+    std::reverse(str2.begin(), str2.end());
+    return str == str2;
 }
 
 // Main function
